@@ -7,11 +7,11 @@
 
 # Site settings
 title: Marcelo Carmona
-email: mclo0202@gmail.com
+email: marcelo@marcelocarmona.com
 description: > # this means to ignore newlines until "baseurl:"
   Articles on JavaScript, Angular and React
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mclo.github.io" # the base hostname & protocol for your site
+url: "https://marcelocarmona.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
