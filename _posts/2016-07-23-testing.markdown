@@ -1,0 +1,14 @@
+---
+title: Testing
+author: Marcelo Carmona
+layout: post
+permalink: /testing/
+disqus: http://www.toddmotto.com/creating-jquery-style-functions-in-javascript-hasclass-addclass-removeclass-toggleclass
+path: 2013-02-02-creating-jquery-style-functions-in-javascript-hasclass-addclass-removeclass-toggleclass.md
+tags:
+- testing
+- angular
+- JavaScript
+---
+
+probando
