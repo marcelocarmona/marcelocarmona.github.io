@@ -134,8 +134,8 @@ Por ejemplo lo podemos utilizar de la siguiente manera:
 
 ```javascript
   new webpack.ProgressPlugin((percentage, msg) => {
-    process.stdout.write('                                                                       \r');
-    process.stdout.write(` \u00BB Generando bundles: ${(percentage * 100.00).toFixed(2)} % => ${msg}\r`);
+    process.stdout.clearLine();
+    process.stdout.write(` \u00BB building bundles: ${(percentage * 100.00).toFixed(2)} % => ${msg}\r`);
   })
 ```
 
