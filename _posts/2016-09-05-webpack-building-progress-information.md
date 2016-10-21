@@ -74,7 +74,7 @@ Debemos cambiarlo por esto
 Para ver mas información sobre la configuración se puede ver el proyecto en <a href="https://github.com/FormidableLabs/webpack-dashboard">github</a>
 
 Como dije anteriormente me parece muy buena la propuesta de tener un dashboard para obtener información relevante de nuestros proyectos.
-Acá dejo algunos twits que se escribieron en el momento de su lanzamiento
+Acá dejo algunos tweets que se escribieron en el momento de su lanzamiento
 
 <center>
 
