@@ -30,3 +30,18 @@ layout: default
     <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><img src="{{ site.baseurl }}/img/icons/facebook-share.svg" alt="Share on Facebook"></a>
     <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><img src="{{ site.baseurl }}/img/icons/google-share.svg" alt="Share on Google+"></a>
 </div>
+
+<div id="disqus_thread"></div>
+<script>
+
+// disqus configuration
+var disqus_url = 'https://marcelocarmona.com{{ page.permalink }}';
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//marcelocarmona-com.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
