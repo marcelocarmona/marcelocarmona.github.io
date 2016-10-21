@@ -139,7 +139,7 @@ Por ejemplo lo podemos utilizar de la siguiente manera:
   })
 ```
 
-En este caso quiero ir mostrando la información en una sola linea por eso el uso de ```\r```.
+En este caso quiero ir mostrando la información en una sola linea por eso uso ```\r```.
 
 Y este ejemplo se puede ver asi:
 <center><img src="/img/posts/building-bundles.png" alt="building bundles"></center>
