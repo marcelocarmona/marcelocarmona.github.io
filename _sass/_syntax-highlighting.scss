@@ -9,9 +9,7 @@ p {
     border-radius: 3px;
   }
 }
-.highlight {
-  margin: 0;
-}
+
 .highlight pre,
 pre,
 .highlight .hll {
@@ -19,7 +17,6 @@ pre,
   white-space: pre;
   padding: 20px;
   border-radius: 3px;
-  // font-size: 18px;
 }
 
 .highlight {
@@ -29,6 +26,7 @@ pre,
   background: #222;
   color: #C1C2C3;
   padding: 25px 20px;
+  margin-bottom: 30px;
 }
 
 .highlight .hll { background-color: #ffc; }
