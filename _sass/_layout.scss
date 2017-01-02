@@ -6,17 +6,19 @@
   padding: 15px;
   border-bottom: 1px solid $grey-color-light;
   text-align: center;
+  background-color: #404040;
+  color: white;
   &__profile {
-
     img {
       max-width: 100%;
       border-radius: 50%;
       border: 3px solid rgba(0, 0, 0, 0.18);
     }
-
   }
   &__bio {
-
+    &__name{
+      font-size: 24px;
+    }
   }
 }
 
