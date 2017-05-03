@@ -5,7 +5,7 @@ layout: post
 permalink: /parsers-and-formatters/
 path: 2015-10-16-parsers-and-formatters.md
 tags:
-- angularjs
+- Angularjs
 - JavaScript
 ---
 

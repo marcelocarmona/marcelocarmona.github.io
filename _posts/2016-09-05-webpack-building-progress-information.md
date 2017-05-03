@@ -5,8 +5,8 @@ layout: post
 permalink: /webpack-building-progress-information/
 path: 2016-09-05-webpack-building-progress-information.md
 tags:
-- webpack
-- javascript
+- Webpack
+- Javascript
 ---
 
 
