@@ -98,8 +98,7 @@
  */
 
 .footer {
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  padding: 20px 0;
   p {
     text-align: center;
   }
@@ -109,9 +108,15 @@
 /**
  * Page content
  */
-
 .page-content {
-  padding: $spacing-unit 0;
+  background-color: whitesmoke;
+}
+
+.page-content__list {
+  padding-top: $spacing-unit;
+  border-left: 1px solid $grey-color-light;
+  border-right: 1px solid $grey-color-light;
+  border-bottom: 1px solid $grey-color-light;
   background-color: white;
 }
 
