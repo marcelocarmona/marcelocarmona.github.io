@@ -6,19 +6,31 @@
   padding: 15px;
   border-bottom: 1px solid $grey-color-light;
   text-align: center;
-  background-color: #404040;
+  background-color: #010101;
   color: white;
+  height: 47px;
   &__profile {
     img {
       max-width: 100%;
+      min-width: 120px;
       border-radius: 50%;
-      border: 3px solid rgba(0, 0, 0, 0.18);
+      border: 4px solid #f5f5f5;
     }
   }
-  &__bio {
-    &__name{
-      font-size: 24px;
-    }
+}
+
+.bio {
+  background-color: white;
+  border-bottom: 1px solid $grey-color-light;
+  padding-top: 64px;
+  text-align: center;
+  margin-bottom: 20px;
+  &__name{
+    font-size: 24px;
+    margin-bottom: 2px;
+  }
+  &__I-am{
+    font-size: smaller;
   }
 }
 
