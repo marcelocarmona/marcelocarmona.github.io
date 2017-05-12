@@ -1,7 +1,6 @@
 /**
  * Site header
  */
-
 .header {
   padding: 15px;
   border-bottom: 1px solid $grey-color-light;
@@ -108,14 +107,12 @@
 /**
  * Site footer
  */
-
 .footer {
   padding: 20px 0;
   p {
     text-align: center;
   }
 }
-
 
 /**
  * Page content
@@ -156,11 +153,9 @@
   color: darken($brand-color, 15%);
 }
 
-
 /**
  * Posts
  */
-
 .post-header {
   text-align: center;
   margin-bottom: $spacing-unit;
