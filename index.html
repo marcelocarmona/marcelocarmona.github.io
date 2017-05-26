@@ -9,9 +9,9 @@ layout: default
         <h1 class="post__title">
           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h1>
-        <span class="post__meta">Posted on {{ post.date | date: "%b %-d, %Y" }} by <a href="//twitter.com/carmonamarcelo" target="_blank">Marcelo Carmona</a></span>
+        <div class="post__meta">Posted on {{ post.date | date: "%b %-d, %Y" }} by <a href="//twitter.com/carmonamarcelo" target="_blank">Marcelo Carmona</a></div>
         <p>{{ post.content | strip_html | truncatewords:50 }}</p>
-<a href="{{ post.url }}">Read more...</a>
+        <a href="{{ post.url }}">Read more...</a>
       </li>
     {% endfor %}
   </ul>

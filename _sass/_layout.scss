@@ -146,11 +146,13 @@
 .post__meta {
   font-size: $small-font-size;
   color: $grey-color;
+  margin-bottom: 15px;
 }
 
 .post__title {
   font-size: 2em;
   color: darken($brand-color, 15%);
+  margin-bottom: 0;
 }
 
 /**
