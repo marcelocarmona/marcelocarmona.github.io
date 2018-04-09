@@ -15,3 +15,5 @@ url: "https://marcelocarmona.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+plugins:
+  - jekyll-sitemap
