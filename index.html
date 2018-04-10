@@ -17,7 +17,7 @@ layout: default
           {% endif %}
         {% endfor %}
         {% if showAll %}
-          <p>{{ post.content}}</p>
+          <p>{{ post.content | truncatewords:50 }}</p>
         {% else %}
           <p>{{ post.content | strip_html | truncatewords:50 }}</p>
         {% endif %}
