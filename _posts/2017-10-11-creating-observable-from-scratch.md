@@ -13,9 +13,9 @@ tags:
 Una buena forma de entender Rxjs es implementado algo similar y mas simple desde 0.
 Voy a mostrar como componer funciones al estilo como lo hace la librería Rxjs.
 
-<center>
+<div class="video-container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/XiIkG9lAr5Q" frameborder="0" allowfullscreen></iframe>
-</center>
+</div>
 
 Vamos a ver diferentes tipos de callbacks con los cuales nos podemos encontrar
 
@@ -40,7 +40,7 @@ arr.forEach(function callback(x) {
 ```
 
 En este segundo ejemplo tenemos un callback que se ejecuta por cada iteración de nuestro array.
-NOTA: en este caso el callback es sincrónico, es importante tener presente que no todos los callbacks son asincronicos
+NOTA: en este caso el callback es sincrónico, es importante tener presente que cuando decimos callbacks no tenemos que pensar que todos los callbacks son asincrónicos
 
 ```javascript
 const promise = fetch("https://jsonplaceholder.typicode.com/posts/1").then(
@@ -58,7 +58,8 @@ function failureCb(err) {
 promise.then(successCb, failureCb);
 ```
 
-En este ejemplo vemos como ejecutar callback en el caso de que una promesa se resolvio correctamente o en el caso que se produzca un error
+En este ejemplo vemos como ejecutar callback en el caso de que una promesa se resolvió correctamente o en el caso que se produzca un error.
+Para tener en cuenta este caso es un poco diferente al anterior ya que no tengo posibilidad de equivocarme al hacer un click.
 
 ```javascript
 fs = require("fs");
@@ -82,7 +83,43 @@ readable.on("error", errorCb);
 readable.on("end", doneCb);
 ```
 
-En este ejemplo en node podemos ver un caso en donde tenemos 3 callback, uno que va leyendo la data a medida que se necesita "data" otro cuando termina "end" y otro cuando se produce un error
+En este ejemplo en node podemos ver un caso en donde tenemos 3 callback, uno que va leyendo la data a medida que se necesita "data" otro cuando termina "end" y otro cuando se produce un error.
+
+Teniendo esto en cuenta la idea es pensar en una forma genérica de como manejar todas los callbacks en javascript, podríamos pensarlo de esta misma manera con tres callbacks next, error, y complete
+
+```javascript
+function nextCallback(data) {
+  console.log(data); // Hacer algo
+}
+
+function giveMeSomeData(nextCb, errorCb, completeCb) {
+  // Usamos solamente el nextCb para este caso
+  document.addEventListener("click", nextCb);
+}
+
+giveMeSomeData(nextCallback, errorCallback, completeCallback);
+```
+
+Recordando el primer ejemplo del eventListener podríamos pensarlo así.
+
+```javascript
+function nextCallback(data) {
+  console.log(data);
+}
+
+function completeCallback() {
+  console.log("done");
+}
+
+function giveMeSomeData(nextCb, errorCb, completeCb) {
+  [1, 2, 3].forEach(nextCallback);
+  completeCb();
+}
+
+giveMeSomeData(nextCallback, errorCallback, completeCallback);
+```
+
+Recordando el segundo ejemplo del array podríamos pensar en algo así.
 
 ```javascript
 function nextCallback(data) {
@@ -98,15 +135,19 @@ function completeCallback() {
 }
 
 function giveMeSomeData(nextCb, errorCb, completeCb) {
-  //document.addEventListener('click', nextCb)
-  //fetch('http://myApi').then(nextCb).catch(errorCb);
-  [1, 2, 3].forEach(nextCallback);
+  fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then(res => {
+      // Llamamos a next y completamos
+      nextCb(res);
+      completeCb();
+    })
+    .catch(errorCb); // Ejecutamos el callback de error
 }
 
 giveMeSomeData(nextCallback, errorCallback, completeCallback);
 ```
 
-Pensando en una forma genérica de como majar todas las funciones en javascript podríamos pensarlo de esta misma manera con tres callbacks next, error, y complete
+Spoiler: es la misma idea que `fromPromise` de Rxjs http://reactivex.io/rxjs/file/es6/observable/PromiseObservable.js.html#lineNumber58
 
 ```javascript
 const observable = {
@@ -131,7 +172,8 @@ const observer = {
 observable.subscribe(observer);
 ```
 
-refactorizando creamos un objeto observer y observable
+Teniendo en cuenta el ejemplo del array refactorizando creamos un objeto `observer` y `observable`.
+GiveMeSomeData lo renombramos a `subscribe`
 
 ```javascript
 function map(transformCb) {
@@ -208,4 +250,24 @@ arrayObservable
   .subscribe(observer);
 ```
 
-y luego podríamos crear los operadores map y filter
+Y luego podríamos crear los operadores map y filter
+El código completo también lo deje en un gist
+
+https://gist.github.com/marcelocarmona/5aa60c8baff780a29673b7987b71a743
+
+Y por último para comprar podemos ver un ejemplo ya utilizando un arrayObservable con Rxjs
+
+```javascript
+const Rx = require("rxjs");
+
+const arrayObservable = Rx.Observable.from([1, 2, 3]);
+
+arrayObservable
+  .map(x => x * 10)
+  .filter(x => x !== 20)
+  .subscribe({
+    next: x => console.log(x),
+    error: err => console.error(err),
+    complete: () => console.log("done")
+  });
+```

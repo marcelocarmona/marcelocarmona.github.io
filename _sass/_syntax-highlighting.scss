@@ -28,6 +28,10 @@ pre,
   box-shadow: 0px 0px 0px 3px #24527e;
 }
 
+.highlighter-rouge {
+  background: #eef;
+}
+
 .highlight .hll {
   background-color: #ffc;
 }
@@ -57,7 +61,7 @@ pre,
 .highlight .cm,
 .highlight .c1,
 .highlight .cs {
-  color: #8d9684;
+  color: #585858;
 }
 .highlight .err,
 .highlight .g,
