@@ -1,9 +1,13 @@
 ---
-layout: page
+layout: blank
 permalink: /about.html
 ---
+I'm Marcelo Carmona a full stack web developer from San Luis, Argentina. I love to share what I know and I've been creating thing on the web for many years and I work right now like Teach Lead. I hang out on [Twitter](https://twitter.com/CarmonaMarcelo) and would love to meet you!
 
-I'm Marcelo, Team leader, javascript developer. #juniordevforlife
+<p style="text-align: center">
+  <img src="/img/marcelocarmona_talk.png" alt="Marcelo Carmona" />
+</p>
+
 
 You can also:
 
