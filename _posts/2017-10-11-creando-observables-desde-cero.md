@@ -1,11 +1,11 @@
 ---
-title: Creating observables from scratch
+title: Creando observables desde cero
 author: Marcelo Carmona
 layout: post
-lang: en
+lang: es
 ref: creating-observable-from-scratch
-permalink: creating-observable-from-scratch
-path: 2017-10-12-creating-observable-from-scratch.md
+permalink: creando-observables-desde-cero
+path: 2017-10-12- creando-observables-desde-cero.md
 tags:
 - Rxjs
 - JavaScript

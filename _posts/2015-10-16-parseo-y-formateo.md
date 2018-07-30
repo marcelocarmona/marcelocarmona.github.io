@@ -1,11 +1,11 @@
 ---
-title: Parsers y Formatters Angularjs
+title: Parseo y formateo en Angularjs
 author: Marcelo Carmona
 layout: post
-lang: en
+lang: es
 ref: parsers-and-formatters
-permalink: parsers-and-formatters
-path: 2015-10-16-parsers-and-formatters.md
+permalink: parseo-y-formateo
+path: 2015-10-16-parseo-y-formateo.md
 tags:
 - Angularjs
 - JavaScript

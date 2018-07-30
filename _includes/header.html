@@ -1,13 +1,11 @@
 <header class="header">
 
   <div class="wrapper">
-
     <div class="header__profile">
       <a href="/">
         <img src="{{ site.baseurl }}/img/marcelo.jpg" alt="Marcelo Carmona">
       </a>
     </div>
-
   </div>
 
 </header>
@@ -17,6 +15,24 @@
   <a href="https://twitter.com/carmonamarcelo" class="twitter-follow-button" data-show-count="false">Follow @carmonamarcelo</a>
   <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   <p class="bio__I-am">Team leader, javascript developer, #juniordevforlife</p>
+</div>
+
+<div class="section">
+  <nav class="wrapper">
+    <div class="navbar navbar__button">
+
+      {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %} {% for post in posts %}
+
+      <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+
+      {% endfor %} {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %} {% for page in pages %}
+
+      <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
+
+      {% endfor %}
+
+    </div>
+  </nav>
 </div>
 
 <div class="section">

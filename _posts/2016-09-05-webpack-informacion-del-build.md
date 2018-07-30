@@ -1,10 +1,11 @@
 ---
-title: Webpack información del building
+title: Webpack building progress information
 author: Marcelo Carmona
 layout: post
-lang: en
-permalink: webpack-building-progress-information
-path: 2016-09-05-webpack-building-progress-information.md
+lang: es
+ref: webpack-building-progress-information
+permalink: webpack-informacion-del-build
+path: 2016-09-05-webpack-informacion-del-build.md
 tags:
 - Webpack
 - Javascript

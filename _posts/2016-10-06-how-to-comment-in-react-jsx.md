@@ -2,36 +2,38 @@
 title: How to comment in React JSX
 author: Marcelo Carmona
 layout: post
-permalink: /comments-react-jsx/
+lang: en
+ref: comments-react-jsx
+permalink: comments-react-jsx
 path: 2016-10-06-how-to-comment-in-react-jsx.md
 tags:
 - React
 - Javascript
 ---
 
-La manera de hacer comentarios en react es un poco rara y cuando se busca información de cómo se hace es un poco dificil de encontrar.
-No se puede usar comentarios HTML adéntro de JSX
+The way that we can make comments in React is a little weird, and when we search information is difficult to find it.
+It is not possible to use HTML comments inside of JSX
 
-```javascript
+
+```html
 render() {
   return (
     <div>
-      <!-- Esto no funciona -->
+      <!-- this does not work -->
     </div>
   )
 }
 ```
-
-Es necesario usar comentarios en Javascript pero para eso vamos a necesitar usar las llaves de la siguiente manera:
+It is necessary to use comments in Javascript but for that we will need to use the curly brackets in the following way:
 
 ```javascript
-{/* Un comentario JSX */}
+{/* A JSX comment */}
 ```
-Y en Multilinea:
+And multiline
 ```javascript
 {/* 
-    Un comentario JSX
-    en muchas
-    líneas
+    A multiline JSX
+    JSX
+    comment
 */}
 ```
