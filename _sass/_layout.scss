@@ -17,6 +17,31 @@
   }
 }
 
+.languages {
+  position: absolute;
+  right: 10px;
+
+  .en:lang(en), .es:lang(es){
+    font-weight: bold;
+    opacity: 1;
+  }
+
+  a {
+    padding: 0 5px;
+    img {
+      width: 20px;
+    }
+
+    opacity: 0.4;
+
+    &:hover {
+      opacity: 1
+    }
+  }
+}
+
+
+
 .bio {
   background-color: #1b95e0;
   border-top: 1px solid #9c9c9c;
