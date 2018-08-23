@@ -2,7 +2,7 @@
 layout: blank
 lang: es
 ref: about
-permalink: /sobre-mi.html
+permalink: /sobre-mi
 ---
 Soy Marcelo Carmona un full stack web developer de San Luis, Argentina. Me gusta compartir lo que se y he estado creando cosas para la web por muchos años actualmente estoy trabajando como Teach Lead. Suelo estar por [Twitter](https://twitter.com/CarmonaMarcelo) y me gustaria conocerte!
 
