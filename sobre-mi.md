@@ -16,3 +16,19 @@ Tambien puedes:
 * Encontrarme en Twitter: [@CarmonaMarcelo](https://twitter.com/CarmonaMarcelo)
 * Mirar mi Github: [https://github.com/marcelocarmona](https://github.com/marcelocarmona)
 * O mi Linkedin: [https://ar.linkedin.com/in/carmonamarcelo](https://ar.linkedin.com/in/carmonamarcelo)
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Marcelo Carmona",
+  "url": "https://marcelocarmona.com",
+  "email": "marcelo@marcelocarmona.com",
+  "image": "https://marcelocarmona.com/img/marcelo.jpg",
+  "sameAs": [
+    "https://twitter.com/CarmonaMarcelo",
+    "https://github.com/marcelocarmona",
+    "https://ar.linkedin.com/in/carmonamarcelo"
+  ]
+}
+</script>
