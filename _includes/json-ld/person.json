@@ -1,0 +1,13 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "{{site.name}}",
+  "url": "{{site.url}}",
+  "email": "{{site.email}}",
+  "image": "{{site.image}}",
+  "sameAs": [
+    "{{site.social.twitterURL}}",
+    "{{site.social.githubURL}}",
+    "{{site.social.linkedinURL}}"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{page.title}}",
+  {% if page.description %} "description": "{{ page.description }}", {% endif %}
+  "image":
+      {% if page.image %}
+          "{{page.image}}"
+      {% else %}
+          "{{site.image}}"
+      {% endif %}
+  ,
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+  },
+  "datePublished": "{{page.date}}",
+  "dateModified": "{% if page.modified %}{{page.modified}}{% else %}{{page.date}}{% endif %}",
+  "isAccessibleForFree": "True",
+  "isPartOf": {
+    "@type": [
+      "CreativeWork",
+      "Product",
+      "Blog"
+    ],
+    "name": "{{page.title}}",
+    "productID": "{{site.url}}"
+  },
+  "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+  "author": {% include json-ld/person.json %},
+  "publisher": {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "{{site.name}}",
+      "url": "{{site.url}}",
+      "email": "{{site.email}}",
+      "image": "{{site.image}}",
+      "logo": {
+        "@context": "http://schema.org",
+        "@type": "ImageObject",
+        "caption": "{{site.name}}",
+        "url": "{{site.image}}"
+      },
+      "sameAs": [
+        "{{site.social.twitterURL}}",
+        "{{site.social.githubURL}}",
+        "{{site.social.linkedinURL}}"
+      ]
+    }
+  }
+}

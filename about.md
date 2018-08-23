@@ -4,7 +4,7 @@ lang: en
 ref: about
 permalink: /about
 ---
-I'm Marcelo Carmona a full stack web developer from San Luis, Argentina. I love to share what I know and I've been creating thing on the web for many years and I work right now like Teach Lead. I hang out on [Twitter](https://twitter.com/CarmonaMarcelo) and would love to meet you!
+I'm Marcelo Carmona a full stack web developer from San Luis, Argentina. I love to share what I know and I've been creating thing on the web for many years and I work right now like Teach Lead. I hang out on [Twitter]({{site.social.twitterURL}}) and would love to meet you!
 
 <p style="text-align: center">
   <img src="/img/marcelocarmona_talk.png" alt="Marcelo Carmona" />
@@ -13,22 +13,10 @@ I'm Marcelo Carmona a full stack web developer from San Luis, Argentina. I love 
 
 You can also:
 
-* Find me on Twitter: [@CarmonaMarcelo](https://twitter.com/CarmonaMarcelo)
-* Check my code on Github: [https://github.com/marcelocarmona](https://github.com/marcelocarmona)
-* Or my Linkedin: [https://ar.linkedin.com/in/carmonamarcelo](https://ar.linkedin.com/in/carmonamarcelo)
+* Find me on Twitter: [@CarmonaMarcelo]({{site.social.twitterURL}})
+* Check my code on Github: [{{site.social.githubURL}}]({{site.social.githubURL}})
+* Or my Linkedin: [{{site.social.linkedinURL}}]({{site.social.linkedinURL}})
 
 <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Person",
-  "name": "Marcelo Carmona",
-  "url": "https://marcelocarmona.com",
-  "email": "marcelo@marcelocarmona.com",
-  "image": "https://marcelocarmona.com/img/marcelo.jpg",
-  "sameAs": [
-    "https://twitter.com/CarmonaMarcelo",
-    "https://github.com/marcelocarmona",
-    "https://ar.linkedin.com/in/carmonamarcelo"
-  ]
-}
+{% include json-ld/person.json %}
 </script>

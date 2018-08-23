@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post">
 
   <header class="post-header">
-    <h1 class="post__title" itemprop="name headline">{{ page.title }}</h1>
+    <h1 class="post__title">{{ page.title }}</h1>
     <div class="post__meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
         Posted on {{ page.date | date: "%b %-d, %Y" }}
-      </time>{% if page.author %} <span itemprop="author" itemscope itemtype="http://schema.org/Person"></span>{% endif %}
+      </time>
       {% if page.path %}
       -
       <a href="//github.com/marcelocarmona/marcelocarmona.github.io/blob/master/{{ page.path }}">
@@ -18,7 +18,7 @@ layout: default
     </div>
   </header>
 
-  <div class="post-content" itemprop="articleBody">
+  <div class="post-content">
     {{ content }}
   </div>
 
@@ -45,3 +45,7 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script type="application/ld+json">
+  {% include json-ld/post.json %}
+</script>
