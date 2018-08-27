@@ -257,7 +257,7 @@ El código completo también lo deje en un gist
 
 https://gist.github.com/marcelocarmona/5aa60c8baff780a29673b7987b71a743
 
-Y por último para comprar podemos ver un ejemplo ya utilizando un arrayObservable con Rxjs
+Y por último para comparar podemos ver un ejemplo ya utilizando un arrayObservable con Rxjs
 
 ```javascript
 const Rx = require("rxjs");
