@@ -24,7 +24,7 @@ lang: en
         {% else %}
           <p>{{ post.content | strip_html | truncatewords:50 }}</p>
         {% endif %}
-        <a href="{{ post.url }}">Read more...</a>
+        <div class="post__meta"><a href="{{ post.url }}">Read more...</a></div>
       </li>
     {% endfor %}
   </ul>
