@@ -12,14 +12,16 @@ tags:
 ---
 
 # $parsers
-Es un array de funciones a ejecutar. Estas se ejecutan en forma ordenada como un pipeline cada vez que el control lee un valor del DOM. En donde las funciones de este pipeline son llamadas en el orden del array y el resultado de una función es la entrada de la siguiente función y el último valor de retorno es enviado a la colección de $validatos.
+It is an array of functions to execute. These functions are executed in order like a pipeline every time that the control read a DOM value. Functions are called following the order of the array and the result of the function is the entry of the next function and the last return value is sent to the collection of $validators
 
-Si el parser devuelve undefined significa que ocurrió un error y no se ejecutaran los $validatos y el ngModel se seteara como undefined a menos que ngModelOptions.allowInvalid este seteado como true el error del parce es guardado en ngModel.$error.parse
+If the parser returns undefined that means that an error occurred, $validators are not going to be executed and the ngModel is going to be seted undefined 
+unless ngModelOptions.allowInvalid is set to true the parse error is stored in ngModel. $ error.parse
 
 # $formatters
-Es un array de funciones que se ejecutan en pipeline cuando el ngModel cambiar, las funciones son llamas en orden inverso, y cada una pasa su valor de retorno a la siguiente. El último valor retornado se utiliza como valor en el DOM
+It is an array of functions that are executed in the pipeline when the ngModel change, the functions are called in reverse order, and each one passes its value back to the next.
+The last value returned is used as a value in the DOM
 
-En la siguiente imagen se puede observar que los parsers se utilizan para transformar los datos del view al model y los formatters del model al view 
+In the following image, it can be seen that the parsers are used to transform the data from the view to the model and the formatters of the model to the view
 
 <img src="/img/posts/ng-model-flow.png">
 

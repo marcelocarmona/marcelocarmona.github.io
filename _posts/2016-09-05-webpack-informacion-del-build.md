@@ -11,11 +11,10 @@ tags:
 - Javascript
 ---
 
-
 Cuando utilizamos webpack para generar nuestros bundles en muchos casos en nuestro entorno de desarrollo resulta conveniente mostrar información acerca del tamaño que ocupa cada modulo, los bundles en si, tiempo que lleva realizar el proceso, si es que estamos transpilando el código mediante babel por ejemplo o utilizando postcss para preprocesar nuestras hojas de estilo.
 
 Las opciones que tenemos actualmente para poder mostrar esta información se realiza por medio de plugins para webpack.
-Voy a dar tres alternativas simples para poder mostrar este tipo de información
+Voy a dar tres alternativas simples para poder mostrar este tipo de información.
 
 # webpack-dashboard
 
@@ -143,6 +142,5 @@ Por ejemplo lo podemos utilizar de la siguiente manera:
 
 En este caso quiero ir mostrando la información en una sola linea por eso uso ```\r```.
 
-Y este ejemplo se puede ver asi:
+Y este ejemplo se puede ver así:
 <center><img src="/img/posts/building-bundles.png" alt="building bundles"></center>
- 
