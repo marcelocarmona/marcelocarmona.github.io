@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://marcelocarmona.com/sitemap.xml
