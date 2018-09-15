@@ -13,9 +13,9 @@ I'm Marcelo Carmona a full stack web developer from San Luis, Argentina. I love 
 
 You can also:
 
-* Find me on Twitter: [@CarmonaMarcelo]({{site.social.twitterURL}})
-* Check my code on Github: [{{site.social.githubURL}}]({{site.social.githubURL}})
-* Or my Linkedin: [{{site.social.linkedinURL}}]({{site.social.linkedinURL}})
+* Find me on [Twitter]({{site.social.twitterURL}})
+* Check my code on [Github]({{site.social.githubURL}})
+* Or my [Linkedin]({{site.social.linkedinURL}})
 
 <script type="application/ld+json">
 {% include json-ld/person.json %}

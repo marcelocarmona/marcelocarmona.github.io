@@ -13,9 +13,9 @@ Soy Marcelo Carmona un full stack web developer de San Luis, Argentina. Me gusta
 
 Tambien puedes:
 
-* Encontrarme en Twitter: [@CarmonaMarcelo]({{site.social.twitterURL}})
-* Mirar mi Github: [{{site.social.githubURL}}]({{site.social.githubURL}})
-* O mi Linkedin: [{{site.social.linkedinURL}}]({{site.social.linkedinURL}})
+* Encontrarme en [Twitter]({{site.social.twitterURL}})
+* Mirar mi [Github]({{site.social.githubURL}})
+* O mi [Linkedin]({{site.social.linkedinURL}})
 
 <script type="application/ld+json">
 {% include json-ld/person.json %}
