@@ -16,7 +16,7 @@ One way to understand Rxjs is implementing something similar and simplest from s
 I'm going to show how we can compose functions in a similar way that Rxjs does.
 
 <div class="video-container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/XiIkG9lAr5Q" frameborder="0" allowfullscreen></iframe>
+  <iframe title="{{ page.title }}" width="560" height="315" src="https://www.youtube.com/embed/XiIkG9lAr5Q" frameborder="0" allowfullscreen></iframe>
 </div>
 
 We are going to see different types of callbacks

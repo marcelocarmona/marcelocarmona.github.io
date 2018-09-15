@@ -16,7 +16,7 @@ Una buena forma de entender Rxjs es implementado algo similar y mas simple desde
 Voy a mostrar como componer funciones al estilo como lo hace la librería Rxjs.
 
 <div class="video-container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/XiIkG9lAr5Q" frameborder="0" allowfullscreen></iframe>
+  <iframe title="{{ page.title }}" width="560" height="315" src="https://www.youtube.com/embed/XiIkG9lAr5Q" frameborder="0" allowfullscreen></iframe>
 </div>
 
 Vamos a ver diferentes tipos de callbacks con los cuales nos podemos encontrar
