@@ -11,7 +11,7 @@ tags:
 - JavaScript
 ---
 
-No queremos re renderear un component si la dara de ese componente no cambio, en muchos casos un componente se re-renderiza cuando las props cambian.
+No queremos re renderear un component si la data de ese componente no cambio, en muchos casos un componente se re-renderiza cuando las props cambian.
 
 <iframe src="https://codesandbox.io/embed/n3x3rvxvy0" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 En este ejemplo renderizamos un nuevo Title por cada click en el botón.
