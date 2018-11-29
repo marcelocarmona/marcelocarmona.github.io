@@ -1,5 +1,4 @@
-# marcelocarmona.github.io
-## marcelocarmona.com
+# marcelocarmona.com
 Built with [Jekyll](//jekyllrb.com) 
 
 ### Steps to use
@@ -7,4 +6,3 @@ Built with [Jekyll](//jekyllrb.com)
 * Clone repo
 * Install Jekyll
 * Run `jekyll serve`
-# github-flow
