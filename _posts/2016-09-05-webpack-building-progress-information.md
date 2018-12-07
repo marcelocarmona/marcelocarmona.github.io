@@ -16,7 +16,7 @@ The options that we currently have to be able to show this information are made 
 
 # webpack-dashboard
 
-This <a href="https://github.com/FormidableLabs/webpack-dashboard" target="_blank">dashboard</a> was created by <a href="https://formidable.com/" target="_blank">formidable.com</a> a good option that show information about:
+This <a href="https://github.com/FormidableLabs/webpack-dashboard" target="_blank" rel="noopener">dashboard</a> was created by <a href="https://formidable.com/" target="_blank" rel="noopener">formidable.com</a> a good option that show information about:
 
 
 * **Log**: the error log of the building process
@@ -30,7 +30,7 @@ This <a href="https://github.com/FormidableLabs/webpack-dashboard" target="_blan
 If you normally use webpack with ```webpack-dev-server``` or ```webpack-dev-middleware``` you will be used to seeing something like this:
 <img src="/img/posts/webpack-dashboard-dev-server.png" alt="webpack dashboard common example">
 
-```webpack-dashboard``` was created by <a href="https://formidable.com/blog/2016/08/15/introducing-webpack-dashboard/" target="_blank">Ken Wheeler</a> It looks like this :)
+```webpack-dashboard``` was created by <a href="https://formidable.com/blog/2016/08/15/introducing-webpack-dashboard/" target="_blank" rel="noopener">Ken Wheeler</a> It looks like this :)
 <img src="/img/posts/webpack-dashboard-screen-shot.png" alt="webpack dashboard screen shot">
 
 Here you can see it in action
@@ -41,7 +41,7 @@ Installing it is quite simple:
 ```bash
 npm install webpack-dashboard --save-dev
 ```
-Then we add the <a href="https://webpack.github.io/docs/plugins.html" target="_blank">plugin</a> to our webpack configuration
+Then we add the <a href="https://webpack.github.io/docs/plugins.html" target="_blank" rel="noopener">plugin</a> to our webpack configuration
 
 ```javascript
 // Import the plugin:
@@ -123,7 +123,7 @@ You can see the project in <a href="https://github.com/clessg/progress-bar-webpa
 
 # webpack progress plugin
 
-And finally, if you want to have something even simpler or more custom, we can use the <a href="https://webpack.github.io/docs/list-of-plugins.html#progressplugin" target="_blank">progressplugin provisto por webpack </a>.
+And finally, if you want to have something even simpler or more custom, we can use the <a href="https://webpack.github.io/docs/list-of-plugins.html#progressplugin" target="_blank" rel="noopener">progressplugin provisto por webpack </a>.
 
 That is basically inserted as a plugin in our webpack configuration file.
 

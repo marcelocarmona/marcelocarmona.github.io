@@ -18,7 +18,7 @@ Voy a dar tres alternativas simples para poder mostrar este tipo de información
 
 # webpack-dashboard
 
-Este <a href="https://github.com/FormidableLabs/webpack-dashboard" target="_blank">dashboard</a> fue creado por la gente de <a href="https://formidable.com/" target="_blank">formidable.com</a> una muy buena opcion que muestra información sobre:
+Este <a href="https://github.com/FormidableLabs/webpack-dashboard" target="_blank" rel="noopener">dashboard</a> fue creado por la gente de <a href="https://formidable.com/" target="_blank" rel="noopener">formidable.com</a> una muy buena opcion que muestra información sobre:
 
 * **Log**: el log de errores del proceso de building
 * **Status**: estado del proceso del building
@@ -30,7 +30,7 @@ Este <a href="https://github.com/FormidableLabs/webpack-dashboard" target="_blan
 Si normalmente usas webpack con ```webpack-dev-server``` o ```webpack-dev-middleware``` estarás acostumbrado a ver algo como esto:
 <img src="/img/posts/webpack-dashboard-dev-server.png" alt="webpack dashboard common example">
 
-El ```webpack-dashboard``` creado por <a href="https://formidable.com/blog/2016/08/15/introducing-webpack-dashboard/" target="_blank">Ken Wheeler</a> tiene el siguiente aspecto :)
+El ```webpack-dashboard``` creado por <a href="https://formidable.com/blog/2016/08/15/introducing-webpack-dashboard/" target="_blank" rel="noopener">Ken Wheeler</a> tiene el siguiente aspecto :)
 <img src="/img/posts/webpack-dashboard-screen-shot.png" alt="webpack dashboard screen shot">
 
 Acá lo puedes ver en acción
@@ -41,7 +41,7 @@ Instalarlo es bastante simple:
 ```bash
 npm install webpack-dashboard --save-dev
 ```
-Luego agregamos el <a href="https://webpack.github.io/docs/plugins.html" target="_blank">plugin</a> a nuestra configuración de webpack
+Luego agregamos el <a href="https://webpack.github.io/docs/plugins.html" target="_blank" rel="noopener">plugin</a> a nuestra configuración de webpack
 
 ```javascript
 // Import the plugin:
@@ -119,7 +119,7 @@ plugins: [
 ]
 ```
 
-Pueden ver el proyecto en <a href="https://github.com/clessg/progress-bar-webpack-plugin" target="_blank">github</a> para ver mas opciones de configuración.
+Pueden ver el proyecto en <a href="https://github.com/clessg/progress-bar-webpack-plugin" target="_blank" rel="noopener">github</a> para ver mas opciones de configuración.
 
 # webpack progress plugin
 Y por último si se quiere tener algo aun mas simple o mas custom, podemos usar el <a href="https://webpack.github.io/docs/list-of-plugins.html#progressplugin" target="_blank">progressplugin provisto por webpack </a>.
