@@ -42,9 +42,9 @@
 
 
 .bio {
-  background-color: #1b95e0;
+  background-color: #6048a6;
   border-top: 1px solid #9c9c9c;
-  border-bottom: 1px solid $grey-color-light;
+  border-bottom: 1px solid  #9c9c9c;
   color: white;
   padding-top: 64px;
   text-align: center;
@@ -183,7 +183,7 @@
 
 .post__meta {
   font-size: $small-font-size;
-  color: $grey-color;
+  font-weight: lighter;
   text-align: center;
   margin-bottom: 15px;
 }
