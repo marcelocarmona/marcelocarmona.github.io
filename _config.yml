@@ -23,3 +23,4 @@ social:
 markdown: kramdown
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
