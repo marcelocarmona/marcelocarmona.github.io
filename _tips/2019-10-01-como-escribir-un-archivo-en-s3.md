@@ -1,18 +1,17 @@
 ---
-title: How to write a file to S3
+title: Como escribir un archivo en s3
 author: Marcelo Carmona
 layout: post
-lang: en
+lang: es
 ref: how-to-write-a-file-to-s3
-permalink: how-to-write-a-file-to-s3
-path: 2019-10-01-how-to-write-a-file-to-s3.md
+permalink: como-escribir-un-archivo-en-s3
+path: 2019-10-01-como-escribir-un-archivo-en-s3.md
 tags:
   - Python
   - Aws
-published: false
 ---
 
-In boto3:
+En boto3:
 
 ```python
 import boto3

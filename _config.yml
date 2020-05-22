@@ -18,7 +18,9 @@ social:
   twitterURL: "https://twitter.com/CarmonaMarcelo"
   githubURL: "https://github.com/marcelocarmona"
   linkedinURL: "https://ar.linkedin.com/in/carmonamarcelo"
-
+collections:
+  tips:
+    output: true
 # Build settings
 markdown: kramdown
 plugins:

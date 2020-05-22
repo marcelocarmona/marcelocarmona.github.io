@@ -4,15 +4,14 @@ author: Marcelo Carmona
 layout: post
 lang: en
 ref: how-to-write-a-file-to-s3
-permalink: como-escribir-un-archivo-en-s3
+permalink: how-to-write-a-file-to-s3
 path: 2019-10-01-how-to-write-a-file-to-s3.md
 tags:
   - Python
   - Aws
-published: false
 ---
 
-En boto3:
+In boto3:
 
 ```python
 import boto3
