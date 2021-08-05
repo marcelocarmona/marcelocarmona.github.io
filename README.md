@@ -6,4 +6,5 @@ Built with [Jekyll](//jekyllrb.com)
 
 - Clone repo
 - Install Jekyll
-- Run `bundle exec jekyll serve`
+- Run `bundle install`
+- Run `bundle exec jekyll serve --livereload`
