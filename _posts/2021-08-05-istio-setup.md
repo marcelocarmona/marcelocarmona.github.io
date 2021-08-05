@@ -48,7 +48,7 @@ Istio is a very feature-rich service mesh that includes the following capabiliti
 * Security Authentication: The Citadel component does key and certificate management.
 
 # Run an example in Kubernetes
-I'm going to use this example https://github.com/GoogleCloudPlatform/microservices-demo.git
+I'm going to use this example [microservices-demo](https://github.com/GoogleCloudPlatform/microservices-demo.git)
 
 ```bash
 git clone https://github.com/GoogleCloudPlatform/microservices-demo.git
