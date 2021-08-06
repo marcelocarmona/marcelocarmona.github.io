@@ -98,7 +98,7 @@ You can see now the proxy inside of any pod with `kubectl describe pod <a-pod-na
 
 # Install Istio integrations for visualization and monitoring (kiali grafana promeheus and jeager)
 
-https://github.com/istio/istio/tree/master/samples/addons
+We are going to use this [addons](https://github.com/istio/istio/tree/master/samples/addons)
 
 ```
 git clone https://github.com/istio/istio.git
