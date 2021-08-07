@@ -5,13 +5,13 @@
     {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %} {% for post in posts %}
 
     <a href="{{ post.url }}" class="{{ post.lang }}">
-      <img src="{{ site.baseurl }}/img/icons/{{ post.lang }}.svg" alt="{{ post.lang }}">
+      <img src="{{ site.baseurl }}/img/icons/{{ post.lang }}.svg" height="15" width="20" alt="{{ post.lang }}">
     </a>
 
     {% endfor %} {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %} {% for page in pages %}
 
     <a href="{{ page.url }}" class="{{ page.lang }}">
-      <img src="{{ site.baseurl }}/img/icons/{{ page.lang }}.svg" alt="{{ page.lang }}">
+      <img src="{{ site.baseurl }}/img/icons/{{ page.lang }}.svg" height="15" width="20" alt="{{ page.lang }}">
     </a>
 
     {% endfor %}
@@ -21,7 +21,7 @@
   <div class="wrapper">
     <div class="header__profile">
       <a href="/">
-        <img src="{{ site.baseurl }}/img/icons/icon-128x128.png" alt="Marcelo Carmona" srcset="{{ site.baseurl }}/img/icons/icon-128x128.png,
+        <img src="{{ site.baseurl }}/img/icons/icon-128x128.png" height="128" width="128" alt="Marcelo Carmona"  srcset="{{ site.baseurl }}/img/icons/icon-128x128.png,
                      {{ site.baseurl }}/img/icons/icon-192x192.png 1.5x">
       </a>
     </div>
